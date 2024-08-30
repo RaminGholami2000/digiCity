@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    perspective: 800px;
+}
+.test {
+  width:100%;
+  height: 100vh;
+  background-color: rgba(137, 43, 226, 0.431);
+  display: block;
+position: absolute;
+top: 0;
+transform: rotateY(90deg);
+  transition: 300ms;
+  .child{
+    width: 450px;
+    height: 600px;
+    background-color: whitesmoke;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+}
+input[type="radio"] {
+  display: block;
+}
+#show:checked ~ .test {
+transform: rotateY(0deg);
+
+}
+label {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  background-color: crimson;
+  text-align: center;
+  line-height: 50px;
+  color: whitesmoke;
+  transition: 300ms;
+  cursor: pointer;
+}
+label:active{
+    transform: scale(0.5);
+}
+label[for=hide]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-prev{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px !important;
+    bottom: 10px !important;
+    top: unset;
+    left: unset;
+
+  }
+  .swiper-button-next{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px !important;
+    bottom: 10px !important;
+    top: unset;
+    left: unset;
+    color: aqua;
+
+  }
